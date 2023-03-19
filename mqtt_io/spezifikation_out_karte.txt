@@ -1,0 +1,11 @@
+Pflichtenheft out Karte Radar-Technik
+muss:
+Anzahl Ausgänge:
+Anzahl einschaltend (bei Signal on)
+Anzahl ausschaltend (bei Signal on)
+Anzahl umschaltend (bei Signal on)
+
+Technische Gegebenheiten des Multiplexers MCP 23017:
+Ansteuerung erfolgt über I2C-Bus. Bist zu 8 Geräte sind am Bus möglich.
+Der Baustein benötigt eine Konfiguration (beim Einschalten des Geräts)
+der Multiplexer hat intern 2 Register a 8 Bit. Die Register werden immer als ganze adressiert. Verändern einzelner Bits erfolgt per Bitmaskierung im Controller (Pi, AVR, ...)
