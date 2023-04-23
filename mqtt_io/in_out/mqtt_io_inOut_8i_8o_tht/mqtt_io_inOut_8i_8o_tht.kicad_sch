@@ -1107,58 +1107,6 @@
         )
       )
     )
-    (symbol "power:+5V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "#PWR" (at 0 -3.81 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "+5V" (at 0 3.556 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "global power" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Power symbol creates a global label with name \"+5V\"" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "+5V_0_1"
-        (polyline
-          (pts
-            (xy -0.762 1.27)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 2.54)
-            (xy 0.762 1.27)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "+5V_1_1"
-        (pin power_in line (at 0 0 90) (length 0) hide
-          (name "+5V" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
     (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "#PWR" (at 0 -6.35 0)
         (effects (font (size 1.27 1.27)) hide)
@@ -1251,6 +1199,58 @@
         )
       )
     )
+    (symbol "power:VDD" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+      (property "Reference" "#PWR" (at 0 -3.81 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Value" "VDD" (at 0 3.81 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "global power" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Power symbol creates a global label with name \"VDD\"" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "VDD_0_1"
+        (polyline
+          (pts
+            (xy -0.762 1.27)
+            (xy 0 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 2.54)
+            (xy 0.762 1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "VDD_1_1"
+        (pin power_in line (at 0 0 90) (length 0) hide
+          (name "VDD" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
   )
 
   (junction (at 133.35 74.93) (diameter 0) (color 0 0 0 0)
@@ -1276,9 +1276,6 @@
   )
   (junction (at 110.49 83.82) (diameter 0) (color 0 0 0 0)
     (uuid 2fdc5afc-d7c4-401c-8aa5-7c87305cb8da)
-  )
-  (junction (at 29.21 54.61) (diameter 0) (color 0 0 0 0)
-    (uuid 32abc3d3-4b8e-4ddc-b6fc-a909629d1f1a)
   )
   (junction (at 193.04 60.96) (diameter 0) (color 0 0 0 0)
     (uuid 35cf1b2d-933d-4a40-b2c7-9a71e96e7612)
@@ -1967,6 +1964,10 @@
     (stroke (width 0) (type default))
     (uuid 22bb3465-7916-410d-afb8-8949240d455b)
   )
+  (wire (pts (xy 34.29 53.34) (xy 34.29 54.61))
+    (stroke (width 0) (type default))
+    (uuid 22fe05dd-b0d0-49bd-bd0e-99475faf72ad)
+  )
   (wire (pts (xy 163.83 132.08) (xy 163.83 140.97))
     (stroke (width 0) (type default))
     (uuid 25e7fe17-9003-45d6-9e5c-a11275bd25cc)
@@ -2550,6 +2551,10 @@
     (stroke (width 0) (type default))
     (uuid 707b5e58-3cfb-415d-ade6-d94063e88de9)
   )
+  (wire (pts (xy 34.29 54.61) (xy 36.83 54.61))
+    (stroke (width 0) (type default))
+    (uuid 71acd43c-dc41-422f-88ed-a497e6b62c31)
+  )
   (wire (pts (xy 124.46 110.49) (xy 133.35 110.49))
     (stroke (width 0) (type default))
     (uuid 72d3ce42-f927-4a3c-9e31-6fdfba4e4760)
@@ -2804,10 +2809,6 @@
   (wire (pts (xy 163.83 151.13) (xy 149.86 151.13))
     (stroke (width 0) (type default))
     (uuid 997a3d01-d3f2-4990-9549-bf318f071efa)
-  )
-  (wire (pts (xy 29.21 54.61) (xy 36.83 54.61))
-    (stroke (width 0) (type default))
-    (uuid 9baf0948-6b29-4e4e-b308-751e9f9d2681)
   )
   (bus (pts (xy 24.13 144.78) (xy 27.94 144.78))
     (stroke (width 0) (type default))
@@ -3792,12 +3793,12 @@
   )
 
   (symbol (lib_id "Jumper:Jumper_3_Open") (at 31.75 92.71 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid 011fe4d0-05e9-404d-9eed-3de00c8e2971)
     (property "Reference" "JP1" (at 31.75 87.63 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "Jumper_3_Open" (at 31.75 90.17 0)
+    (property "Value" "Jumper_3_Open" (at 31.75 85.09 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" (at 31.75 92.71 0)
@@ -4108,6 +4109,31 @@
     )
   )
 
+  (symbol (lib_id "power:VDD") (at 25.4 91.44 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 0b0f7e89-6fea-41e4-af9c-a36fa0243662)
+    (property "Reference" "#PWR019" (at 25.4 95.25 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "VDD" (at 25.4 87.63 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 25.4 91.44 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 25.4 91.44 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 6cad2f8c-8051-44f0-a835-dd3813b57928))
+    (instances
+      (project "mqtt_io_inOut_8i_8o_tht"
+        (path "/783a5188-0d05-4f6f-bfec-bdfa4912a10c"
+          (reference "#PWR019") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Device:R") (at 193.04 57.15 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0ba62d71-92b6-4b40-9696-707d625aadca)
@@ -4312,31 +4338,26 @@
     )
   )
 
-  (symbol (lib_id "power:+5V") (at 193.04 19.05 0) (unit 1)
+  (symbol (lib_id "power:VDD") (at 193.04 100.33 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 17e14c05-1573-4746-90c7-ea80dad73698)
-    (property "Reference" "#PWR031" (at 193.04 22.86 0)
+    (uuid 17ead549-b090-4d99-aaf7-9f719e4c1881)
+    (property "Reference" "#PWR021" (at 193.04 104.14 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+5V" (at 193.04 15.24 0)
+    (property "Value" "VDD" (at 193.04 96.52 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 193.04 19.05 0)
+    (property "Footprint" "" (at 193.04 100.33 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 193.04 19.05 0)
+    (property "Datasheet" "" (at 193.04 100.33 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 918b20e2-4d17-46ff-8a66-36075599193c))
+    (pin "1" (uuid adc34a1e-9103-4745-a064-ad2e31e17935))
     (instances
-      (project "mqtt_io_in_box_16i_tht"
-        (path "/3f633766-4fa4-4a64-bbaa-b578ea4de8f4"
-          (reference "#PWR031") (unit 1)
-        )
-      )
       (project "mqtt_io_inOut_8i_8o_tht"
         (path "/783a5188-0d05-4f6f-bfec-bdfa4912a10c"
-          (reference "#PWR02") (unit 1)
+          (reference "#PWR021") (unit 1)
         )
       )
     )
@@ -4472,41 +4493,6 @@
     )
   )
 
-  (symbol (lib_id "power:+5V") (at 25.4 91.44 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 1e4a41ff-60cd-48ec-8327-f64542529c9a)
-    (property "Reference" "#PWR06" (at 25.4 95.25 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+5V" (at 25.4 87.63 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 25.4 91.44 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 25.4 91.44 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 7528f0c1-4a58-4f28-a6d0-7bd10fd32936))
-    (instances
-      (project "mqtt_io_in_box_16i_tht"
-        (path "/3f633766-4fa4-4a64-bbaa-b578ea4de8f4"
-          (reference "#PWR06") (unit 1)
-        )
-      )
-      (project "mqtt_io_inOut_8i_8o_tht"
-        (path "/783a5188-0d05-4f6f-bfec-bdfa4912a10c"
-          (reference "#PWR024") (unit 1)
-        )
-      )
-      (project "mqtt_out_box_16o_tht_rev1"
-        (path "/c627dcd6-05c4-47a7-af36-f14e587162a0"
-          (reference "#PWR07") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "Device:R") (at 49.53 118.11 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1eaea2bb-4e02-4696-b8d2-649d67d89ebb)
@@ -4574,36 +4560,6 @@
       (project "mqtt_out_box_16o_tht_rev1"
         (path "/c627dcd6-05c4-47a7-af36-f14e587162a0"
           (reference "R41") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+5V") (at 193.04 100.33 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 2094696c-e295-494a-a9ea-e878adc5b354)
-    (property "Reference" "#PWR041" (at 193.04 104.14 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+5V" (at 193.04 96.52 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 193.04 100.33 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 193.04 100.33 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 820861cd-eacb-46a6-8de7-b9ba0523976b))
-    (instances
-      (project "mqtt_io_in_box_16i_tht"
-        (path "/3f633766-4fa4-4a64-bbaa-b578ea4de8f4"
-          (reference "#PWR041") (unit 1)
-        )
-      )
-      (project "mqtt_io_inOut_8i_8o_tht"
-        (path "/783a5188-0d05-4f6f-bfec-bdfa4912a10c"
-          (reference "#PWR033") (unit 1)
         )
       )
     )
@@ -4708,36 +4664,26 @@
     )
   )
 
-  (symbol (lib_id "power:+5V") (at 54.61 21.59 0) (unit 1)
+  (symbol (lib_id "power:VDD") (at 193.04 116.84 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 239abd1a-93c9-49f7-8995-df751a3d360c)
-    (property "Reference" "#PWR01" (at 54.61 25.4 0)
+    (uuid 22698f95-c444-4e45-925a-a2b298a46df6)
+    (property "Reference" "#PWR018" (at 193.04 120.65 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+5V" (at 54.61 17.78 0)
+    (property "Value" "VDD" (at 193.04 113.03 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 54.61 21.59 0)
+    (property "Footprint" "" (at 193.04 116.84 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 54.61 21.59 0)
+    (property "Datasheet" "" (at 193.04 116.84 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 2a146034-6c44-4ef4-8acb-1076bf6d8641))
+    (pin "1" (uuid e37b3c12-faa0-436c-9314-69eeb6d53447))
     (instances
-      (project "mqtt_io_in_box_16i_tht"
-        (path "/3f633766-4fa4-4a64-bbaa-b578ea4de8f4"
-          (reference "#PWR01") (unit 1)
-        )
-      )
       (project "mqtt_io_inOut_8i_8o_tht"
         (path "/783a5188-0d05-4f6f-bfec-bdfa4912a10c"
-          (reference "#PWR03") (unit 1)
-        )
-      )
-      (project "mqtt_out_box_16o_tht_rev1"
-        (path "/c627dcd6-05c4-47a7-af36-f14e587162a0"
-          (reference "#PWR06") (unit 1)
+          (reference "#PWR018") (unit 1)
         )
       )
     )
@@ -4769,36 +4715,6 @@
       (project "mqtt_io_inOut_8i_8o_tht"
         (path "/783a5188-0d05-4f6f-bfec-bdfa4912a10c"
           (reference "R6") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+5V") (at 193.04 50.8 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 2500a955-3be6-4493-a764-0eaec7c8ffed)
-    (property "Reference" "#PWR035" (at 193.04 54.61 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+5V" (at 193.04 46.99 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 193.04 50.8 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 193.04 50.8 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 681639bf-8799-40bb-b630-12bb08002ef9))
-    (instances
-      (project "mqtt_io_in_box_16i_tht"
-        (path "/3f633766-4fa4-4a64-bbaa-b578ea4de8f4"
-          (reference "#PWR035") (unit 1)
-        )
-      )
-      (project "mqtt_io_inOut_8i_8o_tht"
-        (path "/783a5188-0d05-4f6f-bfec-bdfa4912a10c"
-          (reference "#PWR013") (unit 1)
         )
       )
     )
@@ -4902,6 +4818,56 @@
     )
   )
 
+  (symbol (lib_id "power:VDD") (at 25.4 17.78 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 2d510dc6-107d-49a5-9308-701e91d30b80)
+    (property "Reference" "#PWR03" (at 25.4 21.59 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "VDD" (at 25.4 13.97 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 25.4 17.78 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 25.4 17.78 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid eb47b184-8116-4b5f-8fcb-70e1bdedda0b))
+    (instances
+      (project "mqtt_io_inOut_8i_8o_tht"
+        (path "/783a5188-0d05-4f6f-bfec-bdfa4912a10c"
+          (reference "#PWR03") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:VDD") (at 193.04 67.31 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 2f72eb9c-c0b3-466e-bd9c-eb3d42052a87)
+    (property "Reference" "#PWR024" (at 193.04 71.12 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "VDD" (at 193.04 63.5 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 193.04 67.31 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 193.04 67.31 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 15fbb8c5-c6e4-49a2-aef0-bc2a2aaaf2c6))
+    (instances
+      (project "mqtt_io_inOut_8i_8o_tht"
+        (path "/783a5188-0d05-4f6f-bfec-bdfa4912a10c"
+          (reference "#PWR024") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Relay:FINDER-40.31") (at 147.32 67.31 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 325bf287-ef9b-4ea3-8289-d149b59771c5)
@@ -4936,6 +4902,31 @@
     )
   )
 
+  (symbol (lib_id "power:VDD") (at 193.04 19.05 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 36169961-81bf-4015-bc6b-2c608fee4f62)
+    (property "Reference" "#PWR02" (at 193.04 22.86 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "VDD" (at 193.04 15.24 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 193.04 19.05 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 193.04 19.05 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid fa22a62a-2f61-468b-9b09-e377ecf7db63))
+    (instances
+      (project "mqtt_io_inOut_8i_8o_tht"
+        (path "/783a5188-0d05-4f6f-bfec-bdfa4912a10c"
+          (reference "#PWR02") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Isolator:LTV-817") (at 209.55 96.52 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 390bd2b7-a286-48f9-b6c7-10b181f679c3)
@@ -4964,36 +4955,6 @@
       (project "mqtt_io_inOut_8i_8o_tht"
         (path "/783a5188-0d05-4f6f-bfec-bdfa4912a10c"
           (reference "U11") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+5V") (at 193.04 67.31 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 3a1eceb7-cf81-4cc4-8d0a-438df815e5b2)
-    (property "Reference" "#PWR037" (at 193.04 71.12 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+5V" (at 193.04 63.5 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 193.04 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 193.04 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 4f6083ee-502d-4567-8e38-acdf66cb25f3))
-    (instances
-      (project "mqtt_io_in_box_16i_tht"
-        (path "/3f633766-4fa4-4a64-bbaa-b578ea4de8f4"
-          (reference "#PWR037") (unit 1)
-        )
-      )
-      (project "mqtt_io_inOut_8i_8o_tht"
-        (path "/783a5188-0d05-4f6f-bfec-bdfa4912a10c"
-          (reference "#PWR018") (unit 1)
         )
       )
     )
@@ -5131,36 +5092,6 @@
       (project "mqtt_out_box_16o_tht_rev1"
         (path "/c627dcd6-05c4-47a7-af36-f14e587162a0"
           (reference "D25") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+5V") (at 193.04 83.82 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 4177d085-1914-4c86-b5d5-5bb423ca159f)
-    (property "Reference" "#PWR039" (at 193.04 87.63 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+5V" (at 193.04 80.01 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 193.04 83.82 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 193.04 83.82 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 133d3ab6-be32-48dd-b6a2-bb3134d32df4))
-    (instances
-      (project "mqtt_io_in_box_16i_tht"
-        (path "/3f633766-4fa4-4a64-bbaa-b578ea4de8f4"
-          (reference "#PWR039") (unit 1)
-        )
-      )
-      (project "mqtt_io_inOut_8i_8o_tht"
-        (path "/783a5188-0d05-4f6f-bfec-bdfa4912a10c"
-          (reference "#PWR023") (unit 1)
         )
       )
     )
@@ -5481,36 +5412,6 @@
     )
   )
 
-  (symbol (lib_id "power:+5V") (at 193.04 34.29 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 4db09aac-acc0-4dbf-9d84-a79796537908)
-    (property "Reference" "#PWR032" (at 193.04 38.1 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+5V" (at 193.04 30.48 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 193.04 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 193.04 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 1d0c4396-ec9b-4da7-8098-4d310f99f706))
-    (instances
-      (project "mqtt_io_in_box_16i_tht"
-        (path "/3f633766-4fa4-4a64-bbaa-b578ea4de8f4"
-          (reference "#PWR032") (unit 1)
-        )
-      )
-      (project "mqtt_io_inOut_8i_8o_tht"
-        (path "/783a5188-0d05-4f6f-bfec-bdfa4912a10c"
-          (reference "#PWR07") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "power:GND") (at 198.12 148.59 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 513e28da-10fc-4df2-96a8-69e7a0822062)
@@ -5571,6 +5472,31 @@
     )
   )
 
+  (symbol (lib_id "power:VDD") (at 41.91 91.44 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 525e734d-826e-4375-a2bd-2968de9da1ed)
+    (property "Reference" "#PWR016" (at 41.91 95.25 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "VDD" (at 41.91 87.63 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 41.91 91.44 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 41.91 91.44 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 71ad93cc-ce32-4d65-821a-042dd7751062))
+    (instances
+      (project "mqtt_io_inOut_8i_8o_tht"
+        (path "/783a5188-0d05-4f6f-bfec-bdfa4912a10c"
+          (reference "#PWR016") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "parts_tma_1:AST_041-3") (at 171.45 49.53 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 52bc7a2d-90dc-4efe-98d1-74608ed0c2e3)
@@ -5604,12 +5530,12 @@
   )
 
   (symbol (lib_id "Jumper:Jumper_3_Open") (at 48.26 92.71 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid 5679ed20-22cc-48bc-80cc-5aba857598d4)
     (property "Reference" "JP2" (at 48.26 87.63 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "Jumper_3_Open" (at 48.26 90.17 0)
+    (property "Value" "Jumper_3_Open" (at 48.26 85.09 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" (at 48.26 92.71 0)
@@ -5709,6 +5635,31 @@
       (project "mqtt_out_box_16o_tht_rev1"
         (path "/c627dcd6-05c4-47a7-af36-f14e587162a0"
           (reference "Q7") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:VDD") (at 34.29 53.34 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 57d4d844-776f-4170-b819-87257ec72d18)
+    (property "Reference" "#PWR011" (at 34.29 57.15 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "VDD" (at 34.29 49.53 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 34.29 53.34 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 34.29 53.34 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid a4e0ff1e-303b-47e0-99f2-bb4aebc21f70))
+    (instances
+      (project "mqtt_io_inOut_8i_8o_tht"
+        (path "/783a5188-0d05-4f6f-bfec-bdfa4912a10c"
+          (reference "#PWR011") (unit 1)
         )
       )
     )
@@ -5872,36 +5823,6 @@
       (project "mqtt_io_inOut_8i_8o_tht"
         (path "/783a5188-0d05-4f6f-bfec-bdfa4912a10c"
           (reference "R20") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+5V") (at 193.04 133.35 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 77900de6-4921-4eef-a581-10e3155de704)
-    (property "Reference" "#PWR045" (at 193.04 137.16 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+5V" (at 193.04 129.54 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 193.04 133.35 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 193.04 133.35 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid aa273690-c671-4091-9e1e-61737aae335a))
-    (instances
-      (project "mqtt_io_in_box_16i_tht"
-        (path "/3f633766-4fa4-4a64-bbaa-b578ea4de8f4"
-          (reference "#PWR045") (unit 1)
-        )
-      )
-      (project "mqtt_io_inOut_8i_8o_tht"
-        (path "/783a5188-0d05-4f6f-bfec-bdfa4912a10c"
-          (reference "#PWR041") (unit 1)
         )
       )
     )
@@ -6284,6 +6205,31 @@
     )
   )
 
+  (symbol (lib_id "power:VDD") (at 59.69 91.44 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 827269dc-a033-430a-81e1-17233084c2ea)
+    (property "Reference" "#PWR015" (at 59.69 95.25 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "VDD" (at 59.69 87.63 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 59.69 91.44 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 59.69 91.44 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 0fdacb9b-7d8f-4f7a-8b31-218cd25f41bd))
+    (instances
+      (project "mqtt_io_inOut_8i_8o_tht"
+        (path "/783a5188-0d05-4f6f-bfec-bdfa4912a10c"
+          (reference "#PWR015") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:GND") (at 198.12 66.04 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 844ca164-8531-4b97-b9f4-366f87d29673)
@@ -6335,36 +6281,6 @@
       (project "mqtt_io_inOut_8i_8o_tht"
         (path "/783a5188-0d05-4f6f-bfec-bdfa4912a10c"
           (reference "J13") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+5V") (at 193.04 116.84 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 855a66ab-a3df-4d36-bb92-a3a515acc6ee)
-    (property "Reference" "#PWR043" (at 193.04 120.65 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+5V" (at 193.04 113.03 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 193.04 116.84 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 193.04 116.84 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid bf31382e-af39-42b4-81da-22794ac91698))
-    (instances
-      (project "mqtt_io_in_box_16i_tht"
-        (path "/3f633766-4fa4-4a64-bbaa-b578ea4de8f4"
-          (reference "#PWR043") (unit 1)
-        )
-      )
-      (project "mqtt_io_inOut_8i_8o_tht"
-        (path "/783a5188-0d05-4f6f-bfec-bdfa4912a10c"
-          (reference "#PWR037") (unit 1)
         )
       )
     )
@@ -6706,6 +6622,31 @@
     )
   )
 
+  (symbol (lib_id "power:VDD") (at 193.04 133.35 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 940abd7f-b9a2-45c0-822c-1e52921e6f24)
+    (property "Reference" "#PWR025" (at 193.04 137.16 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "VDD" (at 193.04 129.54 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 193.04 133.35 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 193.04 133.35 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 6440f124-c033-4611-9c6b-66998209b1d4))
+    (instances
+      (project "mqtt_io_inOut_8i_8o_tht"
+        (path "/783a5188-0d05-4f6f-bfec-bdfa4912a10c"
+          (reference "#PWR025") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:GND") (at 198.12 82.55 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 94a4e490-2016-4d3c-93e7-c1827f9a3dea)
@@ -6936,6 +6877,31 @@
     )
   )
 
+  (symbol (lib_id "power:VDD") (at 54.61 21.59 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 9c8f1e05-1138-46b9-8cb1-a92984227dcf)
+    (property "Reference" "#PWR04" (at 54.61 25.4 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "VDD" (at 54.61 17.78 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 54.61 21.59 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 54.61 21.59 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 6d55d531-316b-4381-8734-12105e47f6f2))
+    (instances
+      (project "mqtt_io_inOut_8i_8o_tht"
+        (path "/783a5188-0d05-4f6f-bfec-bdfa4912a10c"
+          (reference "#PWR04") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Isolator:LTV-817") (at 209.55 80.01 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9efac8f0-c289-4adc-860a-5b93cd5192b4)
@@ -7070,6 +7036,31 @@
     )
   )
 
+  (symbol (lib_id "power:VDD") (at 193.04 50.8 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid a59f31e8-763d-4e5d-98f1-d8d054c622c4)
+    (property "Reference" "#PWR07" (at 193.04 54.61 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "VDD" (at 193.04 46.99 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 193.04 50.8 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 193.04 50.8 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 4e8d54a6-d4aa-4ec5-b21d-2848b3cd4e58))
+    (instances
+      (project "mqtt_io_inOut_8i_8o_tht"
+        (path "/783a5188-0d05-4f6f-bfec-bdfa4912a10c"
+          (reference "#PWR07") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Device:R") (at 224.79 60.96 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a61cca3f-5ffc-47ee-90bd-b7373b9af62a)
@@ -7101,36 +7092,26 @@
     )
   )
 
-  (symbol (lib_id "power:+5V") (at 25.4 17.78 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid a92cc21d-0e91-4b98-ad17-2b15d6271195)
-    (property "Reference" "#PWR02" (at 25.4 21.59 0)
+  (symbol (lib_id "power:VDD") (at 193.04 83.82 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid a6c43435-4880-496d-93c8-c2b240833f1b)
+    (property "Reference" "#PWR023" (at 193.04 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+5V" (at 25.4 13.97 0)
+    (property "Value" "VDD" (at 193.04 80.01 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 25.4 17.78 0)
+    (property "Footprint" "" (at 193.04 83.82 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 25.4 17.78 0)
+    (property "Datasheet" "" (at 193.04 83.82 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid dd97ed38-d250-48fd-8fa0-9ccf8a10fbaa))
+    (pin "1" (uuid 243e3c60-32db-41a1-8a2b-4bed63d05f74))
     (instances
-      (project "mqtt_io_in_box_16i_tht"
-        (path "/3f633766-4fa4-4a64-bbaa-b578ea4de8f4"
-          (reference "#PWR02") (unit 1)
-        )
-      )
       (project "mqtt_io_inOut_8i_8o_tht"
         (path "/783a5188-0d05-4f6f-bfec-bdfa4912a10c"
-          (reference "#PWR04") (unit 1)
-        )
-      )
-      (project "mqtt_out_box_16o_tht_rev1"
-        (path "/c627dcd6-05c4-47a7-af36-f14e587162a0"
-          (reference "#PWR05") (unit 1)
+          (reference "#PWR023") (unit 1)
         )
       )
     )
@@ -7297,41 +7278,6 @@
       (project "mqtt_out_box_16o_tht_rev1"
         (path "/c627dcd6-05c4-47a7-af36-f14e587162a0"
           (reference "K2") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+5V") (at 59.69 91.44 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid b6b56130-beca-48a8-8967-edcfcc2adac0)
-    (property "Reference" "#PWR08" (at 59.69 95.25 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+5V" (at 59.69 87.63 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 59.69 91.44 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 59.69 91.44 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid c5e3b2f1-84d1-49b9-8cb7-6c8123e38066))
-    (instances
-      (project "mqtt_io_in_box_16i_tht"
-        (path "/3f633766-4fa4-4a64-bbaa-b578ea4de8f4"
-          (reference "#PWR08") (unit 1)
-        )
-      )
-      (project "mqtt_io_inOut_8i_8o_tht"
-        (path "/783a5188-0d05-4f6f-bfec-bdfa4912a10c"
-          (reference "#PWR026") (unit 1)
-        )
-      )
-      (project "mqtt_out_box_16o_tht_rev1"
-        (path "/c627dcd6-05c4-47a7-af36-f14e587162a0"
-          (reference "#PWR09") (unit 1)
         )
       )
     )
@@ -7817,41 +7763,6 @@
     )
   )
 
-  (symbol (lib_id "power:+5V") (at 41.91 91.44 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid c8061ae5-282b-4767-82cb-fe1e1fe5938c)
-    (property "Reference" "#PWR07" (at 41.91 95.25 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+5V" (at 41.91 87.63 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 41.91 91.44 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 41.91 91.44 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid d5796551-37bb-4e84-a551-47375f16ceca))
-    (instances
-      (project "mqtt_io_in_box_16i_tht"
-        (path "/3f633766-4fa4-4a64-bbaa-b578ea4de8f4"
-          (reference "#PWR07") (unit 1)
-        )
-      )
-      (project "mqtt_io_inOut_8i_8o_tht"
-        (path "/783a5188-0d05-4f6f-bfec-bdfa4912a10c"
-          (reference "#PWR025") (unit 1)
-        )
-      )
-      (project "mqtt_out_box_16o_tht_rev1"
-        (path "/c627dcd6-05c4-47a7-af36-f14e587162a0"
-          (reference "#PWR08") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "Device:R") (at 193.04 73.66 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c84df14b-aed9-4486-ad13-58cf9b23ba7e)
@@ -8019,12 +7930,12 @@
   )
 
   (symbol (lib_id "Jumper:Jumper_3_Open") (at 66.04 92.71 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid d0741c96-213b-4163-8be0-86c8b41c9565)
     (property "Reference" "JP3" (at 66.04 87.63 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "Jumper_3_Open" (at 66.04 90.17 0)
+    (property "Value" "Jumper_3_Open" (at 66.04 85.09 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" (at 66.04 92.71 0)
@@ -8697,6 +8608,31 @@
       (project "mqtt_out_box_16o_tht_rev1"
         (path "/c627dcd6-05c4-47a7-af36-f14e587162a0"
           (reference "R43") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:VDD") (at 193.04 34.29 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid ffb69e8c-99d6-4176-8759-8b7df033be57)
+    (property "Reference" "#PWR013" (at 193.04 38.1 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "VDD" (at 193.04 30.48 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 193.04 34.29 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 193.04 34.29 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid e2954257-ac80-4b65-a3f9-83a5f4d9c54f))
+    (instances
+      (project "mqtt_io_inOut_8i_8o_tht"
+        (path "/783a5188-0d05-4f6f-bfec-bdfa4912a10c"
+          (reference "#PWR013") (unit 1)
         )
       )
     )
