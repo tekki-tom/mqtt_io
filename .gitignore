@@ -1,1 +1,11 @@
 **backups/**
+/i2c_mcp23017/build/
+*.synctex.gz
+*.out
+*.log
+*.aux
+*/.generated_files/*
+*.o
+*.o.d
+*.map
+*.zip
