@@ -9,3 +9,5 @@
 *.o.d
 *.map
 *.zip
+~*.kicad_pcb.lck
+/mqtt_io/out/mqtt_out_box_16o_tht/rev2/mqtt_out_box_16o_tht_rev2.kicad_pro/~mqtt_out_box_16o_tht_rev2.kicad_pro.kicad_sch.lck
